@@ -1,3 +1,5 @@
+rpc-framework是一款使用Java编写轻量级的远程过程调用RPC框架，底层基于Netty实现，使用Zookeeper实现注册中心。项目实现服务注册，服务发现，心跳检测机制，负载均衡等基本功能，支持多种序列化和压缩方式。并参照Dubbo对SPI机制的运用，实现ExtensionLoader扩展点加载机制。
+
 # rpc-framework
 
 #### 怎样使用rpc-framework
