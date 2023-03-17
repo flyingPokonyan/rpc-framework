@@ -1,0 +1,1 @@
+loadBalance=rpc.framework.loadbalance.loadbalancer.RandomLoadBalance
