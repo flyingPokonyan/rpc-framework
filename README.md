@@ -1,7 +1,7 @@
 # rpc-framework
 
 #### 怎样使用rpc-framework
-将项目克隆到本地，修改example-rpc-client和example-rpc-server中src -- > main --> resources --> rpc.properties中zookeeper为自己的zookeeper地址，即可完成rpc-framework的简单测试
+将项目克隆到本地，修改example-rpc-client和example-rpc-server中src -- > main --> resources --> rpc.properties中zookeeper为自己的zookeeper地址，首先启动example-rpc-server、然后启动example-rpc-client，发现client确实调用到了server中提供的方法，说明完成rpc-framework的简单测试
 #### 项目说明
 rpc-framework-common和rpc-framework-simple两个模块为rpc-framework主体部分，自己编写public-interface-api模块，该模块为公共接口，即服务消费者和服务提供者需要访问到的公共接口，然后编写服务消费者和服务提供者，将public-interface-api、rpc-framework-common、rpc-framework-simple三个部分引入pom文件中，即可实现远程过程调用功能。
 项目中example-rpc-client和example-rpc-server即为一个简单的服务消费者和服务提供者，可以直接运行。
